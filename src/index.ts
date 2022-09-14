@@ -1,3 +1,3 @@
 import { someFc } from "./test";
 
-someFc()
+someFc(123)
