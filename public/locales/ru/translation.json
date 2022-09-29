@@ -1,3 +1,6 @@
 {
-  "Language": "Русский"
+  "Language": "Русский",
+  "Page Not Found": "Страница не найдена",
+  "Unexpected Error": "Непредвиденная ошибка",
+  "Reload Page": "Обновить страницу"
 }
