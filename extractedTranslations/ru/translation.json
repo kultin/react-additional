@@ -1,8 +1,11 @@
 {
   "About": "About",
+  "About Page": "About Page",
   "Language": "Language",
   "Main": "Main",
+  "Main Page": "Main Page",
   "Page Not Found": "Page Not Found",
   "Reload Page": "Reload Page",
+  "Toggle": "Toggle",
   "Unexpected Error": "Unexpected Error"
 }

@@ -2,5 +2,8 @@
   "Language": "Русский",
   "Page Not Found": "Страница не найдена",
   "Unexpected Error": "Непредвиденная ошибка",
-  "Reload Page": "Обновить страницу"
+  "Reload Page": "Обновить страницу",
+  "Main Page": "Главная страница",
+  "About Page": "О сайте",
+  "Toggle": "Переключить"
 }

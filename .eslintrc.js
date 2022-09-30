@@ -40,10 +40,21 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-promise-executor-return': 'off',
         'implicit-arrow-linebreak': 'warn',
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
-        'max-len': ['error', { code: 100, ignoreComments: true }],
+        'i18next/no-literal-string': [
+            'error',
+            { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
+        ],
+        'max-len': ['error', { code: 101, ignoreComments: true }],
     },
     globals: {
         __IS_DEV__: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };
