@@ -12,11 +12,11 @@ export default {
     },
 } as ComponentMeta<typeof NotFound>;
 
-const Template: ComponentStory<typeof NotFound> = (args) => <NotFound />;
+const Template: ComponentStory<typeof NotFound> = (args) => <NotFound {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorator = [ThemeDecorator(Theme.DARK)];
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

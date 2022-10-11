@@ -36,4 +36,4 @@ OutlineDark.args = {
     children: 'Text',
     theme: ThemeButton.OUTLINE,
 };
-OutlineDark.decorator = [ThemeDecorator(Theme.DARK)];
+OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
