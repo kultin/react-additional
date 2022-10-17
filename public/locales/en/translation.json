@@ -1,9 +1,10 @@
 {
-  "Language": "English",
+  "Language": "Русский",
   "Page Not Found": "Page not Found",
   "Unexpected Error": "Unexpected Error",
   "Reload Page": "Reload Page",
-  "Main Page": "Main Page",
-  "About Page": "About Page",
-  "Toggle": "Toggle"
+  "Main Page": "Main",
+  "About Page": "About us",
+  "Toggle": "Toggle",
+  "ShortLanguage": "Ru"
 }
