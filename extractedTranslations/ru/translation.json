@@ -12,5 +12,7 @@
   "Sign In": "Sign In",
   "TEST modal": "TEST modal",
   "Toggle": "Toggle",
-  "Unexpected Error": "Unexpected Error"
+  "Unexpected Error": "Unexpected Error",
+  "decrement": "decrement",
+  "increment": "increment"
 }
