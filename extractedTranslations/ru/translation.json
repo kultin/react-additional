@@ -2,10 +2,12 @@
   "": "",
   "About": "About",
   "About Page": "About Page",
+  "Enter": "Enter",
   "Language": "Language",
   "Main": "Main",
   "Main Page": "Main Page",
   "Page Not Found": "Page Not Found",
+  "Password": "Password",
   "Reload Page": "Reload Page",
   "ShortLanguage": "ShortLanguage",
   "Sign": "Sign",
@@ -13,6 +15,7 @@
   "TEST modal": "TEST modal",
   "Toggle": "Toggle",
   "Unexpected Error": "Unexpected Error",
+  "Username": "Username",
   "decrement": "decrement",
   "increment": "increment"
 }

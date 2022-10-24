@@ -1,4 +1,3 @@
-import { Theme } from 'app/providers/ThemeProvider';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
