@@ -9,5 +9,8 @@
   "ShortLanguage": "En",
   "Sign In": "Войти",
   "Username": "Имя пользователя",
-  "Password": "Пароль"
+  "Password": "Пароль",
+  "SignIn Form": "Форма авторизации",
+  "Login or password is incorrect": "Неверной логин или пароль",
+  "Exit": "Выйти"
 }

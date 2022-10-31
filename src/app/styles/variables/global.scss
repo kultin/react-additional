@@ -19,5 +19,8 @@
     --modal-z-index: 10;
 
     // Colors
-    --overlay-color: rgba(0 0 0 / 60%);
+    /* stylelint-disable-next-line color-function-notation */
+    --overlay-color: rgba(0, 0, 0, 60%);
+    --red-light: #f90303;
+    --red-dark: #a21515;
 }

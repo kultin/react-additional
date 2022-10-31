@@ -1,5 +1,4 @@
 import { useTheme } from 'app/providers/ThemeProvider';
-import { on } from 'events';
 import React, {
     ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';

@@ -9,5 +9,8 @@
   "ShortLanguage": "Ru",
   "Sign In": "Sign In",
   "Username": "Username",
-  "Password": "Password"
+  "Password": "Password",
+  "SignIn Form": "Sign In Form",
+  "Login or password is incorrect": "Login or password is incorrect",
+  "Exit": "Exit"
 }
