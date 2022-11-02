@@ -1,26 +1,33 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "json-server",
       "author": "typicode"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
-      "postId": 1
+      "postId": "1"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "123"
     }
   ],
   "profile": {
-    "name": "typicode"
+    "firstname": "Bob",
+    "lastname": "Dylan",
+    "age": "55",
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "NN",
+    "username": "admin",
+    "avatar": "https://www.nicepng.com/png/detail/72-728593_funny-cat-png-funny-cat-face-png.png"
   }
 }
