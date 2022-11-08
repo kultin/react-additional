@@ -1,8 +1,10 @@
-{
+{  
+  "About": "О сайте",
   "Language": "English",
   "Page Not Found": "Страница не найдена",
   "Unexpected Error": "Непредвиденная ошибка",
   "Reload Page": "Обновить страницу",
+  "Main": "Главная",
   "Main Page": "Главная страница",
   "About Page": "О сайте",
   "Toggle": "Переключить",
@@ -10,6 +12,7 @@
   "Sign In": "Войти",
   "Username": "Имя пользователя",
   "Password": "Пароль",
+  "Profile": "Профиль",
   "SignIn Form": "Форма авторизации",
   "Login or password is incorrect": "Неверной логин или пароль",
   "Exit": "Выйти"

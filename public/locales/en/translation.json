@@ -1,8 +1,10 @@
 {
+  "About": "About",
   "Language": "Русский",
   "Page Not Found": "Page not Found",
   "Unexpected Error": "Unexpected Error",
   "Reload Page": "Reload Page",
+  "Main": "Main",
   "Main Page": "Main",
   "About Page": "About us",
   "Toggle": "Toggle",
@@ -10,6 +12,7 @@
   "Sign In": "Sign In",
   "Username": "Username",
   "Password": "Password",
+  "Profile": "Profile",
   "SignIn Form": "Sign In Form",
   "Login or password is incorrect": "Login or password is incorrect",
   "Exit": "Exit"

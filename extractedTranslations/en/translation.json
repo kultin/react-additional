@@ -1,7 +1,13 @@
 {
+  "": "",
   "About": "About",
   "About Page": "About Page",
+  "Cancel": "Cancel",
+  "Choose country": "Choose country",
+  "Choose currency": "Choose currency",
+  "Edit": "Edit",
   "Enter": "Enter",
+  "Erro": "Erro",
   "Exit": "Exit",
   "Language": "Language",
   "Login or password is incorrect": "Login or password is incorrect",
@@ -9,13 +15,27 @@
   "Main Page": "Main Page",
   "Page Not Found": "Page Not Found",
   "Password": "Password",
+  "Pick currenc": "Pick currenc",
+  "Pick currency": "Pick currency",
+  "Profile": "Profile",
   "Profile page": "",
   "Reload Page": "Reload Page",
+  "Save": "Save",
   "ShortLanguage": "ShortLanguage",
   "Sign In": "Sign In",
   "SignIn Form": "SignIn Form",
+  "Try to reload page": "Try to reload page",
   "Unexpected Error": "Unexpected Error",
   "Username": "Username",
+  "Your age": "Your age",
+  "Your avatar": "Your avatar",
+  "Your city": "Your city",
+  "Your lastname": "Your lastname",
+  "Your name": "Your name",
+  "Your username": "Your username",
   "decrement": "decrement",
-  "increment": "increment"
+  "increment": "increment",
+  "item": {
+    "text": ""
+  }
 }
