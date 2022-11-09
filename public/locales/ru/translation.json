@@ -15,5 +15,7 @@
   "Profile": "Профиль",
   "SignIn Form": "Форма авторизации",
   "Login or password is incorrect": "Неверной логин или пароль",
-  "Exit": "Выйти"
+  "Exit": "Выйти",
+  "Choose currency": "Выберите валюту",
+  "Choose country": "Выберите страну"
 }

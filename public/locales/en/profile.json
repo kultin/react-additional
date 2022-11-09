@@ -11,5 +11,10 @@
   "Cancel": "Cancel",
   "Try to reload page": "Try to reload page",
   "Choose currency": "Choose currency",
-  "Choose country": "Choose country"
+  "Choose country": "Choose country",
+  "Server error": "Server error",
+  "Age is incorrect": "Age is incorrect",
+  "Wrong country": "Wrong country",
+  "Wrong user data": "Wrong user data",
+  "No data": "No data"
 }

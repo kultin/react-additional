@@ -23,7 +23,7 @@
   "profile": {
     "firstname": "Bob",
     "lastname": "Dylan",
-    "age": "55",
+    "age": 88,
     "currency": "RUB",
     "country": "Russia",
     "city": "NN",

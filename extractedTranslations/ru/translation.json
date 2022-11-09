@@ -2,6 +2,7 @@
   "": "",
   "About": "About",
   "About Page": "About Page",
+  "Age is incorrect": "Age is incorrect",
   "Cancel": "Cancel",
   "Choose country": "Choose country",
   "Choose currency": "Choose currency",
@@ -13,6 +14,7 @@
   "Login or password is incorrect": "Login or password is incorrect",
   "Main": "Main",
   "Main Page": "Main Page",
+  "No data": "No data",
   "Page Not Found": "Page Not Found",
   "Password": "Password",
   "Pick currenc": "Pick currenc",
@@ -21,12 +23,16 @@
   "Profile page": "Profile page",
   "Reload Page": "Reload Page",
   "Save": "Save",
+  "Server error": "Server error",
   "ShortLanguage": "ShortLanguage",
   "Sign In": "Sign In",
   "SignIn Form": "SignIn Form",
   "Try to reload page": "Try to reload page",
   "Unexpected Error": "Unexpected Error",
   "Username": "Username",
+  "Wrong country": "Wrong country",
+  "Wrong user data": "Wrong user data",
+  "Wrong usser data": "Wrong usser data",
   "Your age": "Your age",
   "Your avatar": "Your avatar",
   "Your city": "Your city",
@@ -37,5 +43,6 @@
   "increment": "increment",
   "item": {
     "text": "text"
-  }
+  },
+  "wrong country": "wrong country"
 }

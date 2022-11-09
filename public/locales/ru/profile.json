@@ -11,5 +11,10 @@
   "Save": "Сохранить",
   "Cancel": "Отменить",
   "Choose currency": "Выберите валюту",
-  "Choose country": "Выберите страну"
+  "Choose country": "Выберите страну",
+  "Server error": "Ошибка сервера",
+  "Age is incorrect": "Неправильный возраст",
+  "Wrong country": "Неправильная страна",
+  "Wrong user data": "Не верные данные пользователя",
+  "No data": "Нет данных"
 }
