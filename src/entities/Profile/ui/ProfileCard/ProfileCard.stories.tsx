@@ -1,6 +1,4 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
 import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country';
 import avatar from 'shared/assets/tests/cat-avatar.png';
