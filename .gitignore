@@ -135,3 +135,6 @@ dist
 
 .loki/report.html
 .loki/report.json
+
+# Templates
+.fttemplates
