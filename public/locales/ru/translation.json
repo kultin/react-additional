@@ -1,4 +1,4 @@
-{  
+{
   "About": "О сайте",
   "Language": "English",
   "Page Not Found": "Страница не найдена",
@@ -17,5 +17,8 @@
   "Login or password is incorrect": "Неверной логин или пароль",
   "Exit": "Выйти",
   "Choose currency": "Выберите валюту",
-  "Choose country": "Выберите страну"
+  "Choose country": "Выберите страну",
+  "No comments": "Комментарии отсутствуют",
+  "Enter your comment": "Введите свой комментарий",
+  "Send": "Отправить"
 }
