@@ -16,6 +16,10 @@ const article: Article = {
     id: '1',
     title: 'Typescript news',
     subtitle: "What's new in TS in 2022",
+    user: {
+        id: '1',
+        username: 'admin',
+    },
     img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png',
     views: 1022,
     createdAt: '14.11.2022',

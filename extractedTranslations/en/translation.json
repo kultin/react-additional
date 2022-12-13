@@ -5,9 +5,11 @@
   "Age is incorrect": "Age is incorrect",
   "Article not found": "Article not found",
   "ArticlesPage": "",
+  "Back to list": "Back to list",
   "Cancel": "Cancel",
   "Choose country": "Choose country",
   "Choose currency": "Choose currency",
+  "Comment Item": "",
   "Comments": "Comments",
   "Edit": "Edit",
   "Enter": "Enter",
@@ -18,6 +20,13 @@
   "Login or password is incorrect": "Login or password is incorrect",
   "Main": "Main",
   "Main Page": "Main Page",
+  "More": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "No comments": "No comments",
   "No data": "No data",
   "Page Not Found": "Page Not Found",
@@ -26,6 +35,13 @@
   "Pick currency": "Pick currency",
   "Profile": "Profile",
   "Profile page": "",
+  "Read more": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Reload Page": "Reload Page",
   "Save": "Save",
   "Send": "Send",
