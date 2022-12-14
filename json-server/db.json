@@ -10,7 +10,7 @@
     {
       "id": "1",
       "title": "Typescript news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in TS in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 1022,
@@ -79,7 +79,7 @@
     {
       "id": "2",
       "title": "Javascript news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in TS in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 922,
@@ -148,7 +148,7 @@
     {
       "id": "3",
       "title": "Python news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in TS in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 22,
@@ -172,7 +172,7 @@
     {
       "id": "4",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://logos-download.com/wp-content/uploads/2016/10/Kotlin_logo.png",
       "views": 222,
@@ -196,7 +196,7 @@
     {
       "id": "5",
       "title": "C sharp news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -220,7 +220,7 @@
     {
       "id": "6",
       "title": "C++ news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -244,7 +244,7 @@
     {
       "id": "7",
       "title": "Some news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Some in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -268,7 +268,7 @@
     {
       "id": "8",
       "title": "Some more news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -292,7 +292,7 @@
     {
       "id": "9",
       "title": "One more new",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -316,7 +316,7 @@
     {
       "id": "10",
       "title": "Kotlin2 news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin2 in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -340,7 +340,7 @@
     {
       "id": "11",
       "title": "f1 news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -364,7 +364,7 @@
     {
       "id": "12",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -388,7 +388,7 @@
     {
       "id": "13",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -412,7 +412,7 @@
     {
       "id": "14",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -436,7 +436,7 @@
     {
       "id": "15",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -460,7 +460,7 @@
     {
       "id": "16",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -484,7 +484,7 @@
     {
       "id": "17",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,
@@ -508,7 +508,7 @@
     {
       "id": "18",
       "title": "Kotlin news",
-      "user": "1",
+      "userId": "1",
       "subtitle": "What's new in Kotlin in 2022",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
       "views": 222,

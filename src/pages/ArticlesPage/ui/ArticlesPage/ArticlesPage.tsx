@@ -8,16 +8,16 @@ import { DynamicModuleLoader, ReducerList } from 'shared/lib/components/DynamicM
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { fetchArticleList } from 'pages/ArticlesPage/model/services/fetchArticleList';
-import { Page } from 'shared/ui/Page/Page';
-import { fetchNextArticles } from 'pages/ArticlesPage/model/services/fetchNextArticles/fetchNextArticles';
+import { Page } from 'widgets/Page/Page';
 import { Text, TextAlign, TextTheme } from 'shared/ui/Text/Text';
+import { fetchNextArticles } from '../../model/services/fetchNextArticles/fetchNextArticles';
 import { articlePageActions, articlePageReducer, getArticles } from '../../model/slices/articlePageSlice';
 import cls from './ArticlePage.module.scss';
 import {
     getArticlesError,
     getArticlesIsLoading, getArticlesView,
 } from '../../model/selectors/articlePage';
+import { initArticlesPage } from '../../model/services/initArticlesPage/initArticlesPage';
 
 interface ArticlesPageProps {
   className?: string;
@@ -44,10 +44,7 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
     }, [dispatch]);
 
     useInitialEffect(() => {
-        dispatch(articlePageActions.initState());
-        dispatch(fetchArticleList({
-            page: 1,
-        }));
+        dispatch(initArticlesPage());
     });
 
     if (error) {
@@ -64,13 +61,12 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
     }
 
     return (
-        <DynamicModuleLoader reducers={reducers}>
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
             <Page
                 onScrollEnd={onLoadNextPart}
                 className={classNames(cls.ArticlesPage, {}, [className])}
             >
                 <ArticleViewSelector view={view} onClickView={onChangeView} />
-                {t('ArticlesPage')}
                 <ArticleList
                     isLoading={isLoading}
                     view={view}

@@ -58,7 +58,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                         <ArticleTextBlockComponent block={textBlock} className={cls.textBlock} />
                     )}
                     <div className={cls.footer}>
-                        <Button onClick={onOpenArticle}>{t('Read more...')}</Button>
+                        <Button onClick={onOpenArticle}>{t('Read more')}</Button>
                         {views}
                     </div>
                 </Card>

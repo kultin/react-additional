@@ -15,7 +15,7 @@ export const fetchArticleList = createAsyncThunk<Article[], fetchArticleListProp
         try {
             const response = await extra.api.get<Article[]>('/articles', {
                 params: {
-                    // _expand: 'user',
+                    _expand: 'user',
                     _limit: limit,
                     _page: page,
                 },
