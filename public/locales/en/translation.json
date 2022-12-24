@@ -1,5 +1,8 @@
 {
   "About": "About",
+  "date": "date",
+  "title": "title",
+  "Articles": "Articles",
   "Language": "Русский",
   "Page Not Found": "Page not Found",
   "Unexpected Error": "Unexpected Error",
@@ -20,5 +23,16 @@
   "Choose country": "Choose country",
   "No comments": "No comments",
   "Enter your comment": "Enter your comment",
-  "Send": "Send"
+  "Send": "Send",
+  "Sort by": "Sort by",
+  "Search": "Search",
+  "by": "by",
+  "ascending": "ascending",
+  "descending": "descending",
+  "IT": "IT",
+  "Economics": "Economics",
+  "views": "views",
+  "Scince": "Scince",
+  "All": "All",
+  "Articles not found": "Articles not found"
 }

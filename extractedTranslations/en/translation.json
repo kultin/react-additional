@@ -3,7 +3,10 @@
   "About": "About",
   "About Page": "About Page",
   "Age is incorrect": "Age is incorrect",
+  "All": "All",
+  "Articl": "",
   "Article not found": "Article not found",
+  "Articles not found": "",
   "ArticlesPage": "",
   "Back to list": "Back to list",
   "Cancel": "Cancel",
@@ -11,11 +14,14 @@
   "Choose currency": "Choose currency",
   "Comment Item": "",
   "Comments": "Comments",
+  "Create new article": "Create new article",
+  "Economics": "Economics",
   "Edit": "Edit",
   "Enter": "Enter",
   "Enter your comment": "Enter your comment",
   "Erro": "Erro",
   "Exit": "Exit",
+  "IT": "IT",
   "Language": "Language",
   "Login or password is incorrect": "Login or password is incorrect",
   "Main": "Main",
@@ -27,6 +33,7 @@
       }
     }
   },
+  "New article": "New article",
   "No comments": "No comments",
   "No data": "No data",
   "Page Not Found": "Page Not Found",
@@ -35,6 +42,7 @@
   "Pick currency": "Pick currency",
   "Profile": "Profile",
   "Profile page": "",
+  "React additional": "React additional",
   "Read more": {
     "": {
       "": {
@@ -42,14 +50,18 @@
       }
     }
   },
+  "Recommended": "Recommended",
   "Reload Page": "Reload Page",
   "Save": "Save",
+  "Scince": "Scince",
+  "Search": "Search",
   "Send": "Send",
   "Server error": "Server error",
   "ShortLanguage": "ShortLanguage",
   "Sign In": "Sign In",
   "SignIn Form": "SignIn Form",
   "Some error happened": "Some error happened",
+  "Sort by": "Sort by",
   "Try to reload page": "Try to reload page",
   "Unexpected Error": "Unexpected Error",
   "Username": "Username",
@@ -62,10 +74,16 @@
   "Your lastname": "Your lastname",
   "Your name": "Your name",
   "Your username": "Your username",
+  "ascending": "ascending",
+  "by": "by",
+  "date": "date",
   "decrement": "decrement",
+  "descending": "descending",
   "increment": "increment",
   "item": {
     "text": ""
   },
+  "title": "title",
+  "views": "views",
   "wrong country": "wrong country"
 }

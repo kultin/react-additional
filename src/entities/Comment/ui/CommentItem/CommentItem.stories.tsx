@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { CommentItem } from './CommentItem';
 
 export default {
-    title: 'shared/CommentItem',
+    title: 'entities/Comment/CommentItem',
     component: CommentItem,
     argTypes: {
         backgroundColor: { control: 'color' },

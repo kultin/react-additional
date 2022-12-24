@@ -1,6 +1,13 @@
 import { User } from 'entities/User';
 
+export enum ArticleSortFiled {
+    VIEWS = 'views',
+    TITLE = 'title',
+    CREATED = 'createdAt'
+ }
+
 export enum ArticleType {
+    ALL = 'ALL',
     IT = 'IT',
     SCIENCE = 'SCIENCE',
     ECONOMICS = 'ECONOMICS'

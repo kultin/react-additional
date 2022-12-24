@@ -1,5 +1,6 @@
 {
   "About": "О сайте",
+  "Articles": "Статьи",
   "Language": "English",
   "Page Not Found": "Страница не найдена",
   "Unexpected Error": "Непредвиденная ошибка",
@@ -20,5 +21,18 @@
   "Choose country": "Выберите страну",
   "No comments": "Комментарии отсутствуют",
   "Enter your comment": "Введите свой комментарий",
-  "Send": "Отправить"
+  "Send": "Отправить",
+  "Sort by": "Сортировать по",
+  "Search": "Поиск",
+  "by": "по",
+  "ascending": "возрастанию",
+  "descending": "убыванию",
+  "date": "дате создания",
+  "title": "названию",
+  "views": "просмотрам",
+  "IT": "ИТ",
+  "Economics": "Экономика",
+  "Scince": "Наука",
+  "All": "Все",
+  "Articles not found": "Статьи не найдены"
 }

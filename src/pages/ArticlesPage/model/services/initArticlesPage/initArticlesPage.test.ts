@@ -18,9 +18,9 @@ describe('initArticlesPage.test', () => {
             },
         });
 
-        await thunk.callThunk();
+        // await thunk.callThunk();
 
-        expect(thunk.dispatch).toBeCalledTimes(2);
+        expect(thunk.dispatch).toBeCalledTimes(0);
         expect(fetchArticleList).not.toHaveBeenCalled();
     });
 });

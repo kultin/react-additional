@@ -1,6 +1,6 @@
 import { StateSchema } from 'app/providers/StoreProvider';
 import { scrollPosSaverActions } from 'features/scrollPosSaver';
-import { getScrollPos, getScrollPosByPath } from 'features/scrollPosSaver/model/selectors/scrollPosSaver';
+import { getScrollPosByPath } from 'features/scrollPosSaver/model/selectors/scrollPosSaver';
 import {
     memo, MutableRefObject, ReactNode, useRef, UIEvent,
 } from 'react';
@@ -52,7 +52,7 @@ export const Page = memo((props: PageProps) => {
             onScroll={onScroll}
         >
             {children}
-            <div ref={triggerRef} />
+            {onScrollEnd ? <div className={cls.trigger} ref={triggerRef} /> : null}
         </section>
     );
 });
