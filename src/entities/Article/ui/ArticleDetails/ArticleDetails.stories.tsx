@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Article, ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
+// import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { ArticleDetails } from './ArticleDetails';
 
 export default {
@@ -10,7 +10,7 @@ export default {
         backgroundColor: { control: 'color' },
     },
 } as ComponentMeta<typeof ArticleDetails>;
-
+а
 const article: Article = {
     id: '1',
     title: 'Typescript news',
@@ -86,19 +86,19 @@ const Template: ComponentStory<typeof ArticleDetails> = (args) => <ArticleDetail
 
 export const Primary = Template.bind({});
 Primary.args = {};
-Primary.decorators = [StoreDecorator({
-    articleDetails: {
-        data: article,
-    },
-})];
+// Primary.decorators = [StoreDecorator({
+//     articleDetails: {
+//         data: article,
+//     },
+// })];
 
 export const isLoading = Template.bind({});
 isLoading.args = {};
-isLoading.decorators = [StoreDecorator({
-    articleDetails: {
-        isLoading: true,
-    },
-})];
+// isLoading.decorators = [StoreDecorator({
+//     articleDetails: {
+//         isLoading: true,
+//     },
+// })];
 
 export const Error = Template.bind({});
 Error.args = {};
