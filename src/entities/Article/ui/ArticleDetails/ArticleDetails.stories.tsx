@@ -10,7 +10,7 @@ export default {
         backgroundColor: { control: 'color' },
     },
 } as ComponentMeta<typeof ArticleDetails>;
-а
+
 const article: Article = {
     id: '1',
     title: 'Typescript news',
