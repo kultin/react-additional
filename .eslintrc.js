@@ -21,6 +21,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'paths-react-aditional',
     ],
     rules: {
         indent: [2, 4],
@@ -57,7 +58,8 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
         'no-param-reassign': 'off',
         'no-undef': 'off',
-        'react/no-array-index-key': 'off'
+        'react/no-array-index-key': 'off',
+        'paths-react-aditional/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,
