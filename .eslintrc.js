@@ -49,7 +49,12 @@ module.exports = {
         'implicit-arrow-linebreak': 'warn',
         'i18next/no-literal-string': [
             'error',
-            { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
+            {
+                markupOnly: true,
+                ignoreAttribute: [
+                    'data-testid',
+                    'to', 'justify', 'align', 'direction', 'gap', 'role'],
+            },
         ],
         'max-len': ['error', { code: 113, ignoreComments: true }],
         'jsx-a11y/no-static-element-interactions': 'off',
