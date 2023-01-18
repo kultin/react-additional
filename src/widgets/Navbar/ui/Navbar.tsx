@@ -7,7 +7,9 @@ import { Route } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { Dropdown } from 'shared/ui/Dropdown/Dropdown';
 import { Text, TextSize, TextTheme } from 'shared/ui/Text/Text';
 import cls from './Navbar.module.scss';
 
@@ -57,13 +59,23 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                 >
                     {t('Create new article')}
                 </AppLink>
-                <Button
-                    className={cls.links}
-                    theme={ButtonTheme.CLEAR_INVERTED}
-                    onClick={onLogOut}
-                >
-                    {t('Exit')}
-                </Button>
+                <Dropdown
+                    direction="bottom left"
+                    className={cls.dropDown}
+                    items={[
+                        {
+                            content: t('Profile'),
+                            href: `${RoutePath.profile}/${authData.id}`,
+
+                        },
+                        {
+                            content: t('Exit'),
+                            onClick: onLogOut,
+
+                        },
+                    ]}
+                    trigger={<Avatar size={35} src={authData.avatar} />}
+                />
             </header>
         );
     }
