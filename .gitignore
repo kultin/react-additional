@@ -138,3 +138,6 @@ dist
 
 # Templates
 .fttemplates
+
+#Reports
+/report
