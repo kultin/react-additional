@@ -1,5 +1,4 @@
 import { classNames, Mods } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import cls from './Text.module.scss';
 
@@ -28,6 +27,8 @@ interface TextProps {
   theme?: TextTheme;
   align?: TextAlign;
   size?: TextSize;
+
+  'data-testid'?: string
 }
 
 type HeaderTagType = 'h1' | 'h2' | 'h3';
@@ -39,7 +40,6 @@ const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
 };
 
 export const Text = memo((props: TextProps) => {
-    const { t } = useTranslation();
     const {
         className,
         title,
@@ -47,6 +47,7 @@ export const Text = memo((props: TextProps) => {
         theme = TextTheme.PRIMARY,
         align = TextAlign.LEFT,
         size = TextSize.M,
+        'data-testid': dataTestId = 'Text',
     } = props;
 
     const mods: Mods = {
@@ -59,8 +60,22 @@ export const Text = memo((props: TextProps) => {
 
     return (
         <div className={classNames(cls.Text, mods, [className])}>
-            {title && <HeaderTag className={cls.title}>{title}</HeaderTag>}
-            {text && <p className={cls.text}>{text}</p>}
+            {title && (
+                <HeaderTag
+                    data-testid={`${dataTestId}.Header`}
+                    className={cls.title}
+                >
+                    {title}
+                </HeaderTag>
+            )}
+            {text && (
+                <p
+                    data-testid={`${dataTestId}.Pgph`}
+                    className={cls.text}
+                >
+                    {text}
+                </p>
+            )}
         </div>
     );
 });

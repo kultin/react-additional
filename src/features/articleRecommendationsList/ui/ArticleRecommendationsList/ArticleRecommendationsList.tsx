@@ -15,7 +15,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
     const { t } = useTranslation();
     const { isLoading, data: articles, error } = useArticleRecommendationsList(3);
 
-    if (isLoading || error) {
+    if (isLoading || error || !articles) {
         return null;
     }
 
@@ -27,6 +27,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
             />
             <ArticleList
                 articles={articles}
+                virtualized={false}
                 // eslint-disable-next-line i18next/no-literal-string
                 target="_blank"
             />
