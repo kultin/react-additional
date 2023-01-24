@@ -12,7 +12,7 @@ import { SortOrder } from 'shared/types';
 import { fetchArticleList } from 'pages/ArticlesPage/model/services/fetchArticleList';
 import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce';
 import { TabItem } from 'shared/ui/Tabs/Tabs';
-import { ArticleType } from 'entities/Article/model/types/article';
+import { ArticleType } from 'entities/Article/model/consts/articleConsts';
 import cls from './ArticlePageFilters.module.scss';
 import {
     getArticlesOrder, getArticlesSearch, getArticlesSort, getArticlesType, getArticlesView,
