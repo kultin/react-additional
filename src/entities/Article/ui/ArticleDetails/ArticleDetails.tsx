@@ -25,7 +25,7 @@ import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArt
 
 interface ArticleDetailsProps {
   className?: string;
-  id: string;
+  id?: string;
 }
 
 const reducers: ReducerList = {
