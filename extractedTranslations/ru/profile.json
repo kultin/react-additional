@@ -1,3 +1,19 @@
 {
-  "": ""
+  "": "",
+  "Age is incorrect": "Age is incorrect",
+  "Cancel": "Cancel",
+  "Edit": "Edit",
+  "No data": "No data",
+  "Profile": "Profile",
+  "Save": "Save",
+  "Server error": "Server error",
+  "Try to reload page": "Try to reload page",
+  "Unexpected Error": "Unexpected Error",
+  "Wrong country": "Wrong country",
+  "Wrong user data": "Wrong user data",
+  "Your age": "Your age",
+  "Your city": "Your city",
+  "Your lastname": "Your lastname",
+  "Your name": "Your name",
+  "Your username": "Your username"
 }
