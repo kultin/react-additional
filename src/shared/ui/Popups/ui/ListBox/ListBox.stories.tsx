@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Flex } from '../Stack/Flex/Flex';
+import { Flex } from '../../../Stack/Flex/Flex';
 import { ListBox } from './ListBox';
 
 export default {

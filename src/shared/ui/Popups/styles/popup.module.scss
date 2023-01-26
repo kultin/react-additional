@@ -1,25 +1,5 @@
-.ListBox {
+.popup {
     position: relative;
-}
-
-.trigger {
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0;
-    margin: 0;
-}
-
-.options {
-    background: var(--listbox-bg);
-    position: absolute;
-    z-index: 100;
-    border-radius: 12px;
-    box-shadow: 4px 4px 8px;
-}
-
-.item {
-    padding: 10px 20px;
 }
 
 .active {
@@ -48,4 +28,13 @@
 .optionsBottomRight {
     top: 100%;
     left: 0;
+}
+
+.trigger {
+    background: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
 }
