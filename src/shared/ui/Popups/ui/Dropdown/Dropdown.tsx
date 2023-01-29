@@ -39,10 +39,8 @@ export function Dropdown(props: DropDownProps) {
                         <button
                             type="button"
                             onClick={item.onClick}
-                            className={classNames(cls.item, {
-                                [popupCls.active]: active, [popupCls.disabled]: item.disabled,
-                            })}
                             disabled={item.disabled}
+                            className={classNames(cls.item, { [popupCls.active]: active })}
                         >
                             {item.content}
                         </button>
