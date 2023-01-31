@@ -8,9 +8,9 @@
     "allowJs": true,
     "strict": true,
     "moduleResolution": "node",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"] 
+      "@/*": ["./src/*"] 
     },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,

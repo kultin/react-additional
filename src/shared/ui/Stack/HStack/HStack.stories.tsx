@@ -13,4 +13,3 @@ const Template: ComponentStory<typeof HStack> = (args) => <HStack {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};
-

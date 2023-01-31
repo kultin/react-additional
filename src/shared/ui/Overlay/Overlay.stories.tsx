@@ -13,4 +13,3 @@ const Template: ComponentStory<typeof Overlay> = (args) => <Overlay {...args} />
 
 export const Primary = Template.bind({});
 Primary.args = {};
-

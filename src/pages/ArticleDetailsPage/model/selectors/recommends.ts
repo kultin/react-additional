@@ -1,4 +1,4 @@
-import { StateSchema } from 'app/providers/StoreProvider';
+import { StateSchema } from '@/app/providers/StoreProvider';
 
 // eslint-disable-next-line arrow-body-style
 export const getArticlesRecommendsIsLoading = (state: StateSchema) => {

@@ -1,9 +1,9 @@
-import { ArticleSortFiled } from "entities/Article/model/consts/articleConsts";
 import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { SortOrder } from 'shared/types';
-import { Select, SelectOption } from 'shared/ui/Select/Select';
+import { ArticleSortFiled } from '@/entities/Article/model/consts/articleConsts';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { SortOrder } from '@/shared/types';
+import { Select, SelectOption } from '@/shared/ui/Select/Select';
 import cls from './ArticleSortSelector.module.scss';
 
 interface ArticleSortSelectorProps {

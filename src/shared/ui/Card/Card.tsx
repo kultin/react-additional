@@ -1,6 +1,6 @@
 import { HTMLAttributes, memo, ReactNode } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Card.module.scss';
 
 export enum CardTheme {
