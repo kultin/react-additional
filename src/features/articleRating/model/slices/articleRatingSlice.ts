@@ -1,12 +1,12 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RatingSchema } from '../types/RatingSchema';
+import { ArticleRatingSchema } from '../types/types';
 
-const initialState: RatingSchema = {
+const initialState: ArticleRatingSchema = {
     
 };
 
-export const RatingSlice = createSlice({
-    name: 'Rating',
+export const articleRatingSlice = createSlice({
+    name: 'articleRating',
     initialState,
     reducers: {
         template: (state, action: PayloadAction<string>) => {
@@ -29,5 +29,5 @@ export const RatingSlice = createSlice({
     // },
 });
 
-export const { actions: RatingActions } = RatingSlice;
-export const { reducer: RatingReducer } = RatingSlice;
+export const { actions: articleRatingActions } = articleRatingSlice;
+export const { reducer: articleRatingReducer } = articleRatingSlice;

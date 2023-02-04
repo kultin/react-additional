@@ -579,21 +579,27 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": ["ADMIN"],
+      "role": [
+        "ADMIN"
+      ],
       "avatar": "https://www.nicepng.com/png/detail/72-728593_funny-cat-png-funny-cat-face-png.png"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": ["USER"],
+      "role": [
+        "USER"
+      ],
       "avatar": "https://store.playstation.com/store/api/chihiro/00_09_000/container/US/en/19/UP3493-CUSA07861_00-AV00000000000138/image?w=320&h=320&bg_color=000000&opacity=100&_version=00_09_000"
     },
     {
       "id": "3",
       "username": "manager",
       "password": "123",
-      "role": ["MANAGER"],
+      "role": [
+        "MANAGER"
+      ],
       "avatar": "https://store.playstation.com/store/api/chihiro/00_09_000/container/US/en/19/UP3493-CUSA07861_00-AV00000000000138/image?w=320&h=320&bg_color=000000&opacity=100&_version=00_09_000"
     }
   ],
@@ -653,6 +659,45 @@
       "title": "Уведомление 1",
       "description": "Произошло какое-то событие",
       "userId": "2"
+    }
+  ],
+  "article-rate": [
+    {
+      "id": "1",
+      "rate": "5",
+      "feedback": "Good",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": "3",
+      "feedback": "Good one",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "articleId": "3",
+      "rate": 3,
+      "userId": "1",
+      "feedback": "not bad",
+      "id": "GHhyLnD"
+    }
+  ],
+  "profile-rate": [
+    {
+      "id": "1",
+      "rate": "5",
+      "feedback": "Good",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": "3",
+      "feedback": "Good one",
+      "userId": "2",
+      "profileId": "2"
     }
   ]
 }
