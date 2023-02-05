@@ -13,7 +13,7 @@ import { articleDetailsPageReducer } from '../../model/slices';
 import { ArticleDetailsComment } from '../ArticleDetailsComment/ArticleDetailsComment';
 import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import cls from './ArticleDetailsPage.module.scss';
-import { ArticleRating } from '@/features/articleRating';
+import { ArticleRating } from '@/features/ArticleRating';
 
 interface ArticleDetailsPageProps {
   className?: string;
