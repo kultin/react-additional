@@ -3,7 +3,7 @@ export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
 export type { Article } from './model/types/article';
 
 export {
-    ArticleView, ArticleSortFiled, ArticleType,
+    ArticleView, ArticleSortFiled, ArticleType, ArticleBlockType,
 } from './model/consts/articleConsts';
 export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
 
@@ -14,3 +14,5 @@ export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelecto
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 
 export { getArticleDetailsData } from './model/selectors/articleDetails';
+
+export { articleDetailsReducer } from './model/slices/articleDetailsSlice';

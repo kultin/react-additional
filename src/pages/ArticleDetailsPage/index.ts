@@ -2,3 +2,4 @@ export { ArticleDetailsPageLazy as ArticleDetailsPage } from './ui/ArticleDetail
 export type { ArticleDetailsCommentSchema } from './model/types/ArticleDetailsCommentSchema';
 export type { ArticleDetailsRecommendsSchema } from './model/types/ArticleDetailsRecommendsSchema';
 export type { ArticleDetailsPageSchema } from './model/types/index';
+export { articleDetailsPageReducer } from './model/slices';

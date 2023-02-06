@@ -3,16 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
-    ArticleSortFiled, ArticleSortSelector, ArticleTypeTabs, ArticleView, ArticleViewSelector,
+    ArticleSortFiled, ArticleSortSelector, ArticleTypeTabs, ArticleView, ArticleViewSelector, ArticleType,
 } from '@/entities/Article';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Card } from '@/shared/ui/Card/Card';
+import { Card } from '@/shared/ui/Card';
 import { Input } from '@/shared/ui/Input/Input';
 import { SortOrder } from '@/shared/types';
-import { fetchArticleList } from '@/pages/ArticlesPage/model/services/fetchArticleList';
+import { fetchArticleList } from '../../model/services/fetchArticleList';
 import { useDebounce } from '@/shared/lib/hooks/useDebounce/useDebounce';
-import { TabItem } from '@/shared/ui/Tabs/Tabs';
-import { ArticleType } from '@/entities/Article/model/consts/articleConsts';
 import cls from './ArticlePageFilters.module.scss';
 import {
     getArticlesOrder, getArticlesSearch, getArticlesSort, getArticlesType, getArticlesView,
