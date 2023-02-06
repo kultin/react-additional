@@ -67,7 +67,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
-        'paths-react-aditional/path-checker': 'error',
+        'paths-react-aditional/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
