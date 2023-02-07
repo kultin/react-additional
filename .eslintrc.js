@@ -75,6 +75,13 @@ module.exports = {
                 testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
             },
         ],
+        'paths-react-aditional/layers-import': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider, **/testing'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
