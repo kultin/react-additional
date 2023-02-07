@@ -22,6 +22,7 @@ module.exports = {
         'i18next',
         'react-hooks',
         'paths-react-aditional',
+        'unused-imports',
     ],
     rules: {
         indent: [2, 4],
@@ -33,6 +34,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
         // 'no-unused-vars': 'warn',
         'no-unused-vars': 'off',
+        'unused-imports/no-unused-imports': 'error',
         '@typescript-eslint/no-unused-vars': [
             'warn',
             { argsIgnorePattern: '^_' },
