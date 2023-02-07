@@ -5,13 +5,13 @@ import { getUserAuthData } from '@/entities/User';
 import { LoginModal } from '@/features/AuthByUsername';
 import { AvatarDropdown } from '@/features/avatarDropdown';
 import { NotificationButton } from '@/features/notificationButton';
-import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppLink } from '@/shared/ui/AppLink/AppLink';
-import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
+import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { HStack } from '@/shared/ui/Stack';
-import { Text, TextSize, TextTheme } from '@/shared/ui/Text/Text';
+import { Text, TextSize, TextTheme } from '@/shared/ui/Text';
 import cls from './Navbar.module.scss';
+import { RoutePath } from '@/shared/consts/router';
 
 interface NavbarProps {
   className?: string,
