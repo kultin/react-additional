@@ -11,7 +11,7 @@ import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { HStack } from '@/shared/ui/Stack';
 import { Text, TextSize, TextTheme } from '@/shared/ui/Text';
 import cls from './Navbar.module.scss';
-import { RoutePath } from '@/shared/consts/router';
+import { getRouteArticleNew } from '@/shared/consts/router';
 
 interface NavbarProps {
   className?: string,
@@ -46,7 +46,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                     title={t('React additional')}
                 />
                 <AppLink
-                    to={RoutePath.article_create}
+                    to={getRouteArticleNew()}
                     className={cls.createBtn}
                 >
                     {t('Create new article')}
