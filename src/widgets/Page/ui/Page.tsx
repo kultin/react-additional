@@ -4,7 +4,7 @@ import {
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { StateSchema } from '@/app/providers/StoreProvider';
-import { scrollPosSaverActions, getScrollPosByPath } from '@/features/scrollPosSaver';
+import { scrollPosSaverActions, getScrollPosByPath } from '@/features/ScrollPosSaver';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInfiniteScroll } from '@/shared/lib/hooks/useInfiniteScroll/useInfiniteScroll';

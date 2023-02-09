@@ -3,7 +3,7 @@ import {
 } from '@reduxjs/toolkit';
 import { counterReducer } from '@/entities/Counter';
 import { userReducer } from '@/entities/User';
-import { scrollPosSaverReducer } from '@/features/scrollPosSaver';
+import { scrollPosSaverReducer } from '@/features/ScrollPosSaver';
 import { $api } from '@/shared/api/api';
 import { rtkApi } from '@/shared/api/rtkApi';
 import { createReducerManager } from './reducerManager';
