@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Input } from '@/shared/ui/Input';
 import { Page } from '@/widgets/Page';
-import { RatingCard } from '@/entities/Rating';
 
 const MainPage = () => {
     const { t } = useTranslation('main');
@@ -20,11 +19,6 @@ const MainPage = () => {
                 placeholder={t('Enter')}
                 value={value}
                 onChange={onChange}
-            />
-            <RatingCard
-                title={t('Leave your feedback')}
-                feedbackTitle={t('Here')}
-                hasFeedback
             />
         </Page>
     );
