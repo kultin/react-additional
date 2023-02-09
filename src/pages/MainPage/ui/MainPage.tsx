@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Input } from '@/shared/ui/Input';
 import { Page } from '@/widgets/Page';
+import { Counter } from '@/entities/Counter';
 
 const MainPage = () => {
     const { t } = useTranslation('main');
@@ -20,6 +21,7 @@ const MainPage = () => {
                 value={value}
                 onChange={onChange}
             />
+            <Counter />
         </Page>
     );
 };

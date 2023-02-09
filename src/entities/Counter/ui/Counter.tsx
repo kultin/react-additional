@@ -1,26 +1,30 @@
 import { t } from 'i18next';
-import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '@/shared/ui/Button';
-import { counterActions } from '../model/slice/counterSlice';
-import { getCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
+import { useCounterActions } from '../model/slice/counterSlice';
+import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 
 export const Counter = () => {
-    const dispatch = useDispatch();
-    const counterValue = useSelector(getCounterValue);
+    const counterValue = useCounterValue();
+    const { add, decrement, increment } = useCounterActions();
 
-    const increment = () => {
-        dispatch(counterActions.increment());
+    const incrementHandler = () => {
+        increment();
     };
 
-    const decrement = () => {
-        dispatch(counterActions.decrement());
+    const decrementHandler = () => {
+        decrement();
+    };
+
+    const addHandler = () => {
+        add(5);
     };
 
     return (
         <div>
             <h1 data-testid="value-title">{counterValue}</h1>
-            <Button data-testid="increment-btn" onClick={increment}>{t('increment') as string}</Button>
-            <Button data-testid="decrement-btn" onClick={decrement}>{t('decrement') as string}</Button>
+            <Button data-testid="increment-btn" onClick={incrementHandler}>{t('increment') as string}</Button>
+            <Button data-testid="decrement-btn" onClick={decrementHandler}>{t('decrement') as string}</Button>
+            <Button data-testid="decrement-btn" onClick={addHandler}>{t('add') as string}</Button>
         </div>
     );
 };
