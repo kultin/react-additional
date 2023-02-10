@@ -8,7 +8,7 @@ import {
     Article, ArticleView, ArticleSortFiled, ArticleType,
 } from '@/entities/Article';
 import { ARTICLES_VIEW_LOCAL_STORAGE_KEY } from '@/shared/consts/localStorage';
-import { SortOrder } from '@/shared/types';
+import { SortOrder } from '@/shared/types/sort';
 import { fetchArticleList } from '../services/fetchArticleList';
 import { ArticlePageSchema } from '../types/articlePageSchema';
 

@@ -14,7 +14,7 @@ const MainPage = () => {
     };
 
     return (
-        <Page>
+        <Page data-testid="MainPage">
             {t('Main')}
             <Input
                 placeholder={t('Enter')}
