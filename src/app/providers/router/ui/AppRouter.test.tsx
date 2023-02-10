@@ -1,7 +1,8 @@
 import { screen } from '@testing-library/react';
-import { getRouteAbout, getRouteProfile } from '@/shared/consts/router';
+import { getRouteAbout, getRouteAdminPanel, getRouteProfile } from '@/shared/consts/router';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import AppRouter from './AppRouter';
+import { UserRole } from '@/entities/User';
 
 describe('app/router/AppRouter', () => {
     test('Page should render', async () => {
@@ -43,16 +44,27 @@ describe('app/router/AppRouter', () => {
         expect(page).toBeInTheDocument();
     });
 
-    // TODO
-    // test('Access denied(no role)', async () => {
-    //     componentRender(<AppRouter />, {
-    //         route: getRouteAdminPanel(),
-    //         initialState: {
-    //             user: { _inited: true, authData: { role: [UserRole.USER] } },
-    //         },
-    //     });
+    test('Access denied(no role)', async () => {
+        componentRender(<AppRouter />, {
+            route: getRouteAdminPanel(),
+            initialState: {
+                user: { _inited: true, authData: { role: [UserRole.USER] } },
+            },
+        });
 
-    //     const page = await screen.findByTestId('ForbiddenPage');
-    //     expect(page).toBeInTheDocument();
-    // });
+        const page = await screen.findByTestId('ForbiddenPage');
+        expect(page).toBeInTheDocument();
+    });
+
+    test('Admin panel', async () => {
+        componentRender(<AppRouter />, {
+            route: getRouteAdminPanel(),
+            initialState: {
+                user: { _inited: true, authData: { role: [UserRole.ADMIN] } },
+            },
+        });
+
+        const page = await screen.findByTestId('AdminPanelPage');
+        expect(page).toBeInTheDocument();
+    });
 });
