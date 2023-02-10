@@ -1,5 +1,4 @@
 import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card, CardTheme } from '@/shared/ui/Card';
 import { Text } from '@/shared/ui/Text';
@@ -13,7 +12,6 @@ interface NotificationItemProps {
 
 export const NotificationItem = memo((props: NotificationItemProps) => {
     const { className, item } = props;
-    const { t } = useTranslation();
 
     const content = (
         <Card

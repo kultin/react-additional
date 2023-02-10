@@ -1,5 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Icon } from './Icon';
+import UserIcon from '../../assets/icons/user-filled.svg';
 
 export default {
     title: 'shared/Icon',
@@ -12,4 +13,6 @@ export default {
 const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+    Svg: UserIcon,
+};
