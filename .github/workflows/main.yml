@@ -38,7 +38,7 @@
 #         if: always()
 #         run: npm run test:ui:ci
 
-name: linting, testing, building
+name: listing, testing, building
 on:
   push:
     branches: [ main ]
