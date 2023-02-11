@@ -1,39 +1,117 @@
-name: listing, testing, building
+# name: listing, testing, building
+# on:
+#   push: 
+#     branches: [ main ]
+#   pull_request: 
+#     branches: [ main ]  
+# jobs:
+#   pipeline: 
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-version: [ 17.x ]
+
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Staring Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with: 
+#           node-version: ${{ matrix.node-version }}
+#       - name: install modules
+#         run: npm ci --force
+#       - name: build production project
+#         if: always()
+#         run: npm run build:prod
+#       - name: lint typescript
+#         if: always()
+#         run: npm run lint
+#       - name: lint scss
+#         if: always()
+#         run: npm run lint:scss
+#       - name: unit testing
+#         if: always()
+#         run: npm run test:unit
+#       - name: build storybook
+#         if: always()
+#         run: npm run storybook:build
+#       - name: screenshot testing
+#         if: always()
+#         run: npm run test:ui:ci
+
+name: linting, testing, building
 on:
-  push: 
+  push:
     branches: [ main ]
-  pull_request: 
-    branches: [ main ]  
+  pull_request:
+    branches: [ main ]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 jobs:
-  pipeline: 
+  build-and-ui-testing:
     runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
+    enviroment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      strategy:
+      matrix:
+        node-version: [ 17.x ]
+      steps:
+        - uses: actions/checkout@v2
+        - name: Staring Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v1
+          with:
+            node-version: ${{ matrix.node-version }}
+        - name: install modules
+          run: npm ci --force
+        - name: build production project
+          run: npm run build:prod
+          if: always()
+        - name: build storybook
+          run: npm run storybook:build
+          if: always()
+        - name: screenshot testing
+          run: npm run test:ui:ci
+          if: always()
+        - name: generate HTML report
+          run: npm run test:ui:report
+          if: always()
+        - name: Setup Pages
+          run: actions/configure-pages@v2
+          if: always()
+        - name: Upload artifact
+          run: actions/upload-pages-artifact@v1
+          if: always()
+          with:
+            path: '.loki'
+        - name: Deploy to GitHub Pages
+          id: deployment
+          if: always()
+          uses: actions/deploy-pages@v1
+
+checks:
+    runs-on: ubuntu-latest 
     strategy:
       matrix:
         node-version: [ 17.x ]
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Staring Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with: 
-          node-version: ${{ matrix.node-version }}
-      - name: install modules
-        run: npm install
-      - name: build production project
-        if: always()
-        run: npm run build:prod
-      - name: lint typescript
-        if: always()
-        run: npm run lint
-      - name: lint scss
-        if: always()
-        run: npm run lint:scss
-      - name: unit testing
-        if: always()
-        run: npm run test:unit
-      - name: build storybook
-        if: always()
-        run: npm run storybook:build
-      - name: screenshot testing
-        if: always()
-        run: npm run test:ui:ci
+      steps:
+        - uses: actions/checkout@v2
+        - name: Staring Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v1
+          with:
+            node-version: ${{ matrix.node-version }}
+        - name: install modules
+          run: npm ci --force
+        - name: linting typescript
+          run: npm run lint
+          if: always()
+        - name: linting scss
+          run: npm run lint:scss
+        - name: unit testing
+          run: npm run test:unit
+          if: always()
