@@ -86,8 +86,7 @@ jobs:
         if: always()
       - name: Upload artifact
         run: actions/upload-pages-artifact@v3
-        with:
-          path: '.loki'
+        path: '.loki'
         if: always()
       - name: Deploy to GitHub Pages
         id: deployment
