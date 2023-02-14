@@ -93,7 +93,6 @@ jobs:
         id: deployment
         if: always()
         uses: actions/deploy-pages@v1
-
   checks:
       runs-on: ubuntu-latest 
       strategy:
