@@ -24,7 +24,7 @@ export const Counter = () => {
             <h1 data-testid="value-title">{counterValue}</h1>
             <Button data-testid="increment-btn" onClick={incrementHandler}>{t('increment') as string}</Button>
             <Button data-testid="decrement-btn" onClick={decrementHandler}>{t('decrement') as string}</Button>
-            <Button data-testid="decrement-btn" onClick={addHandler}>{t('add') as string}</Button>
+            <Button data-testid="add-btn" onClick={addHandler}>{t('add') as string}</Button>
         </div>
     );
 };
