@@ -85,7 +85,7 @@ jobs:
         run: actions/configure-pages@v2
         if: always()
       - name: Upload artifact
-        run: actions/upload-pages-artifact@v1
+        run: actions/upload-pages-artifact@v3
         with:
           path: '.loki'
         if: always()
@@ -93,6 +93,7 @@ jobs:
         id: deployment
         if: always()
         uses: actions/deploy-pages@v1
+
   checks:
       runs-on: ubuntu-latest 
       strategy:
