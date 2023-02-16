@@ -1,0 +1,33 @@
+{
+  "id": "3",
+  "title": "Python news",
+  "userId": "1",
+  "subtitle": "What's new in TS in 2022",
+  "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oIqU795h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/1400/1%2AGh4eaAQU432ZQH7qsVbJ_A.png",
+  "views": 22,
+  "createdAt": "14.01.2022",
+  "type": [
+    "IT"
+  ],
+  "blocks": [
+    {
+      "id": "1",
+      "type": "TEXT",
+      "title": "Title of this block",
+      "paragraphs": [
+        "Привет! Это моя первая статья на Хабре и в ней я хочу рассказать про такой язык, как TypeScript, и почему именно на нем вместо Javascript ты должен начать писать уже в этом году! В данной статье приведу 2 примера, когда TypeScript поможет нам избежать ошибки или подскажет, что что-то не так. Погнали!",
+        "Пока что все в порядке. Но если аргументы в функции sum поменяются на string тип а в функции concatenation на number, то и тип возвращаемого результата и сам результат поменяются, и будут некорректными",
+        "Но что будет, если передать в аргумент ключ, которого нет в объекте? Обычный Javascript пропустит эту ошибку. Но мы можем превентивно описать типы так, чтобы если мы уже знаем, что за объект у нас будет и какие у него ключи, мы не пропустим ключ, которого нет в объекте!"
+      ]
+    }
+  ],
+  "user": {
+    "id": "1",
+    "username": "admin",
+    "password": "123",
+    "role": [
+      "ADMIN"
+    ],
+    "avatar": "https://www.nicepng.com/png/detail/72-728593_funny-cat-png-funny-cat-face-png.png"
+  }
+}

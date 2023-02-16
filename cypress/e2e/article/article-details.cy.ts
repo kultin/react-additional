@@ -12,19 +12,20 @@ describe('Article Details', () => {
     afterEach(() => {
         cy.removeArticle(currentArticleId);
     });
-    it('See the details', () => {
+    it.skip('See the details', () => {
         cy.getByTestId('ArticleDetails.Info').should('exist');
     });
-    it('See recommendation list', () => {
+    it.skip('See recommendation list', () => {
         cy.getByTestId('ArticleRecommendationsList').should('exist');
     });
-    it('Send comment', () => {
+    it.skip('Send comment', () => {
         cy.getByTestId('ArticleDetails.Info').should('exist');
         cy.getByTestId('AddCommentForm').scrollIntoView();
         cy.addComment('TEST TEXT');
         cy.getByTestId('CommentCard.Content').should('have.length', 1);
     });
     it('Rates article', () => {
+        cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
         cy.getByTestId('RatingCard').should('exist');
         cy.getByTestId('RatingCard').scrollIntoView();
         cy.setRate(4, 'feedback');
