@@ -1,0 +1,11 @@
+{
+  "id": "1",
+  "firstname": "Test",
+  "lastname": "User",
+  "age": 22,
+  "currency": "RUB",
+  "country": "Russia",
+  "city": "NN",
+  "username": "testuser",
+  "avatar": "bit.ly/3YSNpAv"
+}
