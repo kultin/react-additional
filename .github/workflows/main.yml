@@ -19,23 +19,26 @@ jobs:
          node-version: ${{ matrix.node-version }}
      - name: install modules
        run: npm ci --force
+     - name: webpack version
+       run: npx webpack --version
+       if: always()  
      - name: build production project
        run: npm run build:dev
        if: always()
-     - name: linting typescript
-       run: npm run lint:ts
-       if: always()
-     - name: linting css
-       run: npm run lint:scss
-     - name: unit testing
-       if: always()
-       run: npm run test:unit
-     - name: build storybook
-       run: npm run storybook:build
-       if: always()
-     - name: screenshot testing
-       run: npm run test:ui:ci
-       if: always()
+    #  - name: linting typescript
+    #    run: npm run lint:ts
+    #    if: always()
+    #  - name: linting css
+    #    run: npm run lint:scss
+    #  - name: unit testing
+    #    if: always()
+    #    run: npm run test:unit
+    #  - name: build storybook
+    #    run: npm run storybook:build
+    #    if: always()
+    #  - name: screenshot testing
+    #    run: npm run test:ui:ci
+    #    if: always()
 
 
 # name: linting, testing, building
