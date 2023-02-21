@@ -3,6 +3,10 @@ import { BuildOptions } from './types/config';
 
 export function buildResolvers(options: BuildOptions): ResolveOptions {
 
+  console.log('###########################');
+  console.log('options.paths.src', options.paths.src);  
+  console.log('###########################');
+
     return {
         extensions: ['.tsx', '.ts', '.js'],
         preferAbsolute: true,
