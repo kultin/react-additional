@@ -1,49 +1,48 @@
-# name: listing, testing, building
-# on:
-#   push: 
-#     branches: [ main ]
-#   pull_request: 
-#     branches: [ main ]  
-# jobs:
-#   pipeline: 
-#     runs-on: ubuntu-latest
-#     strategy:
-#       matrix:
-#         node-version: [ 17.x ]
+#name: linting, testing, building
+#on:
+#  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
+#jobs:
+#  pipeline:
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        node-version: [ 17.x ]
+#
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Staring Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#      - name: install modules
+#        run: npm ci --force
+#      - name: build production project
+#        run: npm run build:prod
+#        if: always()
+#      - name: linting typescript
+#        run: npm run lint:ts
+#        if: always()
+#      - name: linting css
+#        run: npm run lint:scss
+#      - name: unit testing
+#        if: always()
+#        run: npm run test:unit
+#      - name: build storybook
+#        run: npm run storybook:build
+#        if: always()
+#      - name: screenshot testing
+#        run: npm run test:ui:ci
+#        if: always()
 
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Staring Node.js ${{ matrix.node-version }}
-#         uses: actions/setup-node@v1
-#         with: 
-#           node-version: ${{ matrix.node-version }}
-#       - name: install modules
-#         run: npm ci --force
-#       - name: build production project
-#         if: always()
-#         run: npm run build:prod
-#       - name: lint typescript
-#         if: always()
-#         run: npm run lint
-#       - name: lint scss
-#         if: always()
-#         run: npm run lint:scss
-#       - name: unit testing
-#         if: always()
-#         run: npm run test:unit
-#       - name: build storybook
-#         if: always()
-#         run: npm run storybook:build
-#       - name: screenshot testing
-#         if: always()
-#         run: npm run test:ui:ci
-
-name: listing, testing, building
+name: linting, testing, building
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 permissions:
   contents: write
   pages: write
@@ -70,7 +69,7 @@ jobs:
       - name: install modules
         run: npm ci --force
       - name: build production project
-        run: npm run build:dev
+        run: npm run build:prod
         if: always()
       - name: build storybook
         run: npm run storybook:build
@@ -79,12 +78,12 @@ jobs:
         run: npm run test:ui:ci
         if: always()
       - name: unit testing
-        run: npm run test:unit
         if: always()
-      - name: generate HTML report
+        run: npm run test:unit
+      - name: Generate HTML report
         run: npm run test:ui:report
         if: always()
-      - name: move loki report
+      - name: move loki
         run: mv .loki reports/
         if: always()
       - name: Setup Pages
@@ -101,20 +100,20 @@ jobs:
         uses: actions/deploy-pages@v1
 
   checks:
-      runs-on: ubuntu-latest 
-      strategy:
-        matrix:
-          node-version: [ 17.x ]
-      steps:
-        - uses: actions/checkout@v2
-        - name: Staring Node.js ${{ matrix.node-version }}
-          uses: actions/setup-node@v1
-          with:
-            node-version: ${{ matrix.node-version }}
-        - name: install modules
-          run: npm ci --force
-        - name: linting typescript
-          run: npm run lint
-          if: always()
-        - name: linting scss
-          run: npm run lint:scss
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 17.x ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Staring Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install modules
+        run: npm ci --force
+      - name: linting typescript
+        run: npm run lint:ts
+        if: always()
+      - name: linting css
+        run: npm run lint:scss
