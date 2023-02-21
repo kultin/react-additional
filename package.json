@@ -31,7 +31,10 @@
     "postinstall": "rm -rf ./node_modules/.cache"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": ["prettier --list-different", "eslint"]
+    "**/*.{ts,tsx}": [
+      "prettier --list-different",
+      "eslint"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -111,6 +114,7 @@
     "ts-loader": "^9.2.6",
     "ts-morph": "^17.0.1",
     "ts-node": "^10.5.0",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typescript": "^4.5.5",
     "vite": "^4.0.4",
     "vite-plugin-svgr": "^2.4.0",
