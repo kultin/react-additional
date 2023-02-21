@@ -8,8 +8,9 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 export function buildResolvers(options: BuildOptions): ResolveOptions {
   
   console.log('#####################');
-  console.log('!!!!', path.resolve(__dirname));
-  console.log('!!!!', path.resolve(__dirname, 'src'),);
+  console.log('__dirname', path.resolve(__dirname));
+  console.log('__dirname, src', path.resolve(__dirname, 'src'));
+  console.log('options.paths.src', options.paths.src);
   console.log('#####################');
   
     return {
@@ -18,7 +19,7 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
         modules: [options.paths.src, 'node_modules'],
         mainFiles: ['index'],
         alias: {
-            '@': path.resolve(__dirname, 'src'),
+            '@': options.paths.src,
         },
     };
 }
