@@ -5,7 +5,12 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
 
   console.log('###########################');
   console.log('options.paths.src', options.paths.src);
-  console.log('fallback', options.paths.src.split('/').slice(1).join('/'));  
+  const removeReactAdditional = (path: string) => {
+      const arr = path.split('/')
+      arr.splice(-2, 1)
+      return arr.join('/')
+  } 
+  console.log('fallback', removeReactAdditional(options.paths.src));  
   console.log('###########################');
 
     return {
@@ -17,7 +22,7 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
             '@': options.paths.src,
         },
         fallback: {
-            '@': options.paths.src.split('/').slice(1).join('/'),
+            '@': removeReactAdditional(options.paths.src),
         }
     };
 }
