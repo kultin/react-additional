@@ -5,17 +5,17 @@ import { BuildEnv, BuildPaths } from './config/build/types/config';
 
 export default (env: BuildEnv) => {
     const paths: BuildPaths = {
-        entry: path.resolve('src', 'index.tsx'),
-        build: path.resolve('build'),
-        html: path.resolve('public', 'index.html'),
-        src: path.resolve('src'),
-        locales: path.resolve('public', 'locales'),
-        buildLocales: path.resolve('build', 'locales'),
+        entry: path.resolve(__dirname, 'src', 'index.tsx'),
+        build: path.resolve(__dirname, 'build'),
+        html: path.resolve(__dirname, 'public', 'index.html'),
+        src: path.resolve(__dirname, 'src'),
+        locales: path.resolve(__dirname, 'public', 'locales'),
+        buildLocales: path.resolve(__dirname, 'build', 'locales'),
     };
 
     console.log('###########################');
-    console.log('path.resolve(__dirname, src)', path.resolve('src'));
-    console.log('path.resolve(__dirname, build)', path.resolve('build'));
+    console.log('path.resolve(__dirname, src)', path.resolve(__dirname, 'src'));
+    console.log('path.resolve(__dirname, build)', path.resolve(__dirname, 'build'));
     
     console.log('###########################');
     

@@ -4,7 +4,8 @@ import { BuildOptions } from './types/config';
 export function buildResolvers(options: BuildOptions): ResolveOptions {
 
   console.log('###########################');
-  console.log('options.paths.src', options.paths.src);  
+  console.log('options.paths.src', options.paths.src);
+  console.log('fallback', options.paths.src.split('/').slice(1).join('/'));  
   console.log('###########################');
 
     return {
@@ -15,5 +16,8 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
         alias: {
             '@': options.paths.src,
         },
+        fallback: {
+            '@': options.paths.src.split('/').slice(1).join('/'),
+        }
     };
 }
