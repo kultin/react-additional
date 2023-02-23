@@ -1,26 +1,19 @@
 import path from 'path';
 import webpack from 'webpack';
+import { removeReactAdditional } from './config/build/buildResolvers';
 import { buildWebpackConfig } from './config/build/buildWebpackConfig';
 import { BuildEnv, BuildPaths } from './config/build/types/config';
 
 export default (env: BuildEnv) => {
     const paths: BuildPaths = {
-        entry: path.resolve(__dirname, 'src', 'index.tsx'),
-        build: path.resolve(__dirname, 'build'),
-        html: path.resolve(__dirname, 'public', 'index.html'),
-        src: path.resolve(__dirname, 'src'),
-        locales: path.resolve(__dirname, 'public', 'locales'),
-        buildLocales: path.resolve(__dirname, 'build', 'locales'),
-    };
-
-    console.log('###########################');
-    console.log('path.resolve(__dirname, src)', path.resolve(__dirname, 'src'));
-    console.log('path.resolve(__dirname, build)', path.resolve(__dirname, 'build'));
+        entry: removeReactAdditional(path.resolve(__dirname, 'src', 'index.tsx')),
+        build: removeReactAdditional(path.resolve(__dirname, 'build')),
+        html: removeReactAdditional(path.resolve(__dirname, 'public', 'index.html')),
+        src: removeReactAdditional(path.resolve(__dirname, 'src')),
+        locales: removeReactAdditional(path.resolve(__dirname, 'public', 'locales')),
+        buildLocales:removeReactAdditional(path.resolve(__dirname, 'build', 'locales')),
+    };    
     
-    console.log('###########################');
-    
-    
-
     const mode = env?.mode || 'development';
     const PORT = env?.port || 3000;
     const apiUrl = env?.apiUrl || 'http://localhost:8000';

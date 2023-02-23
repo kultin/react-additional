@@ -20,10 +20,10 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
     return {
         extensions: ['.tsx', '.ts', '.js'],
         preferAbsolute: true,
-        modules: [removeReactAdditional(options.paths.src), 'node_modules'],
+        modules: [options.paths.src, 'node_modules'],
         mainFiles: ['index'],
         alias: {
-            '@': removeReactAdditional(options.paths.src),
+            '@': options.paths.src,
         },
     };
 }
