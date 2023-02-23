@@ -10,8 +10,10 @@ const removeReactAdditional = (path: string) => {
 export function buildResolvers(options: BuildOptions): ResolveOptions {
 
   console.log('###########################');
+
   console.log('options.paths.src', options.paths.src);
   console.log('fallback', removeReactAdditional(options.paths.src));  
+  
   console.log('###########################');
 
     return {
