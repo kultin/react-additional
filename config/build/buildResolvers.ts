@@ -13,19 +13,16 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
 
   console.log('options.paths.src', options.paths.src);
   console.log('fallback', removeReactAdditional(options.paths.src));  
-  
+
   console.log('###########################');
 
     return {
         extensions: ['.tsx', '.ts', '.js'],
         preferAbsolute: true,
-        modules: [options.paths.src, 'node_modules'],
+        modules: [removeReactAdditional(options.paths.src), 'node_modules'],
         mainFiles: ['index'],
         alias: {
             '@': removeReactAdditional(options.paths.src),
         },
-        fallback: {
-            '@': removeReactAdditional(options.paths.src),
-        }
     };
 }
