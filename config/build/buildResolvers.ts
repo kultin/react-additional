@@ -1,9 +1,10 @@
 import { ResolveOptions } from 'webpack';
 import { BuildOptions } from './types/config';
 
-const removeReactAdditional = (path: string) => {
-    const arr = path.split('/')
-    arr.splice(-2, 1)
+export const removeReactAdditional = (path: string) => {
+    const arr = path.split('/');
+    const index = arr.indexOf('react-additional');
+    arr.splice(index, 1);
     return arr.join('/')
 } 
 
