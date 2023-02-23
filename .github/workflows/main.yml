@@ -20,9 +20,6 @@ jobs:
          node-version: ${{ matrix.node-version }}
      - name: install modules
        run: npm ci --force
-     - name: webpack version
-       run: npx webpack --version
-       if: always()  
      - name: build production project
        run: npm run build:dev
        if: always()
