@@ -8,15 +8,12 @@ on:
 jobs:
  pipeline:
    runs-on: ubuntu-latest
-   defaults:
-      run:
-        working-directory: /home/runner/work/react-additional
    strategy:
      matrix:
        node-version: [ 17.x ]
 
    steps:
-     - uses: actions/checkout@v2
+     - uses: actions/checkout@v3
      - name: Staring Node.js ${{ matrix.node-version }}
        uses: actions/setup-node@v1
        with:
