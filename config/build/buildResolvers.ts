@@ -23,7 +23,7 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
         modules: [options.paths.src, 'node_modules'],
         mainFiles: ['index'],
         alias: {
-            '@': `/react-additional/${options.paths.src}`,
+            '@': options.paths.src,
         },
     };
 }
