@@ -8,6 +8,9 @@ on:
 jobs:
  pipeline:
    runs-on: ubuntu-latest
+   defaults:
+      run:
+        working-directory: ${{ github.workspace }}
    strategy:
      matrix:
        node-version: [ 17.x ]
@@ -22,7 +25,6 @@ jobs:
        run: npm ci --force
      - name: build production project
        run: npm run build:dev
-       working-directory: ${{ github.workspace }}
        if: always()
     #  - name: linting typescript
     #    run: npm run lint:ts
